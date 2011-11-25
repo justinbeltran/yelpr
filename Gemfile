@@ -1,4 +1,6 @@
 source "http://rubygems.org"
 
-# Specify your gem's dependencies in yelpr.gemspec
-gemspec
+gem 'minitest'
+gem 'mocha'
+gem 'vcr'
+gem 'faraday'
