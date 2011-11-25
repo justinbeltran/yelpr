@@ -1,0 +1,71 @@
+---
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://api.yelp.com:80/v2/business/yelp-san-francisco
+    body: !!null 
+    headers:
+      authorization:
+      - OAuth oauth_consumer_key="i0dj2IWqCUY_A_0ZotwPtQ", oauth_nonce="4518584ad43b98a43f2c5c3d350ed06f",
+        oauth_signature="Gm%2FQjLNM5a7NSDfNwahCW%2BpPG1E%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1322237218", oauth_token="VlSHX6TjpdbwJ74Eq8WslL1bj4XkQot0",
+        oauth_version="1.0"
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Fri, 25 Nov 2011 16:04:07 GMT
+      server:
+      - Apache
+      x-node:
+      - web43, api_com
+      set-cookie:
+      - bs=d29c63bc13d14b8672d832ee500c4b63; Max-Age=631122952; Path=/; expires=Tue,
+        25-Nov-2031 08:00:00 GMT; HttpOnly
+      content-type:
+      - application/json
+      vary:
+      - Accept-Encoding,User-Agent
+      content-encoding:
+      - gzip
+      transfer-encoding:
+      - chunked
+      x-proxied:
+      - lb2
+    body: !binary |-
+      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
+    http_version: '1.1'
