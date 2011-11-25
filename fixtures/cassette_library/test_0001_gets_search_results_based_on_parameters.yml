@@ -1,0 +1,81 @@
+---
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://api.yelp.com:80/v2/search?limit=5&location=Irvine,%20CA&term=food
+    body: !!null 
+    headers:
+      authorization:
+      - OAuth oauth_consumer_key="i0dj2IWqCUY_A_0ZotwPtQ", oauth_nonce="b36903300c85b8817fdf5b5df1ae1d06",
+        oauth_signature="zcs6JVz76Ly%2BVsA%2BXiqJEvJu5q4%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1322265488", oauth_token="dJN9A1_-TNJoXNcOuk3xgn4AVJze-nU5",
+        oauth_version="1.0"
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Fri, 25 Nov 2011 23:55:17 GMT
+      server:
+      - Apache
+      x-node:
+      - web40, api_com
+      set-cookie:
+      - bs=4f7ddd7f73b5823f87e2b76ff9de43bd; Max-Age=631094682; Path=/; expires=Tue,
+        25-Nov-2031 08:00:00 GMT; HttpOnly
+      content-type:
+      - application/json
+      vary:
+      - Accept-Encoding,User-Agent
+      content-encoding:
+      - gzip
+      transfer-encoding:
+      - chunked
+      x-proxied:
+      - lb1
+    body: !binary |-
+      H4sIAAAAAAAAA8yYW1PjOhLHv4rWD3seNk58kW+8nAoJCRnu1yEMUynFVmwx
+      smUsOyZMzXffdhxgSAIMp9gFKuQiS/9ut1q/dOenktGQiUTZ+KnIlMxfOclZ
+      XgR0FFCeE2VDa2qu4Xiurnua7Zie5rlWQ+EiCZen2bZn6pbu2o5uedi13F8N
+      xadJTrPfdZUN02zaruPYpqW5tu1oGv5NT9lQdd1purqHDey6BjaMX6CTi5xw
+      ZcPwNKehjAvJEiollcrGt59KBspJqGzgJjgWizHjdFRkMFuJ8jzdaLXi5ozy
+      tOmLuDVmd62OmeiU2Tv76WRwc9Tb/Xo9IUGpNBZCIxaHS+tpwAhukh9zHT9I
+      5lIyh+l+y9B0TTd029Q1G7umazotEGgxX1QzMlk/j/AoInzSTMFRMESnjJYj
+      XxRJDvHQGkpCYrh1pSdEgE6zwv+BjuFiUKQrbo1kTPhbndN1AwKuG5q91rm5
+      5FMXnwSgLMunIZyAn2pe+almtZ8qy6awKbBSJixNaT7K6S3cnNIXCUUkoyiP
+      KBI8QAGZSSQm889XSiaIH10paC6GSBIsxqeEFxTGxzRi9WDcRAOU0ZjGY5rV
+      agmfwQiRIkFlNEMpFSmnqBQFmKEkByuThSVJUeVzbUaikkhEGYxnzWYTfGYx
+      CZeSRprqPLTmcmjHaSRy0eptprMTnG57m+7u2UUZDW+yMC5bsWxep+FvYXhB
+      2liWrpWn3u02z3aO84td7cvxTf9iszz8ET4qL+UDJ1lIl/JhRXkpHwzHMgyM
+      TQuvzYe55NN8YAGYeGnbfZLTUGRsfii/1Zl8ksOGSrhYLZT1h+/fq9MOsxfc
+      8Vk+A+nBvU7AZMrJbESCIIMzDmJKhRQXnVLOASUNZY/5EeXVpv/7cbBe30Cd
+      NvIMyHQFzIRUjIjvFxnxwYTbUFIBTnA4dxVnlHoeeF4dw2x2P3x2AmNvsv69
+      0hBZwBKIwSrrHBNj3VzDOOy5QAygW7U79N5+p60A8d6OtcPCHhwG097ucco3
+      hzEfp9tH0/YHYs1+wNpBB3VZAg+1rfZFX3xOqAlfhS2Eh0rUUITiWaRtszDi
+      8F8BBm0XcYq6ZLaBlu/yKtljAfpK6Q90wqtZObAqXzevR6ZwcnKK9inIjkUW
+      VadnW+ToJBVrV/QrKUBahkIBcUQlwOxVlK0EdIEyx/ZkeUCs3R/tnnuJr3vW
+      BfHCN6FshZK1sjo6ZIeH/DCeaSSNsjOun5zj9mdA2fOb/T8EmYl1Cz0CpLsG
+      XPgPwYVfB9eqtddAZWhQYC3+jDXAMrFmvBuvyMyamtObaLZ1V17a15tffXXn
+      dDUp/m+8MjTrAVgnlIxZFsi6FvucuJILHxdfyA/5CycvmWcJ9rBtGtgxVwl2
+      GjGJ+r1TBC/VdJlDJVUVagC0eIbAE5SzGGqmBZhkVXv5JEkASWPKGZ1SWFci
+      EpO7Cj95pTcvsJhsPFRxE+Ln8AZAxfK/JJrSkCQteKZww4wkdf0GCStRLqoF
+      rwJshQULgA3NC9w973Fd+9r2na4sZvSibL8HwO7M8z3rcshimR+542HZP7V6
+      B78p3x/y+6D/R1ch7ioEXl1E/uMQ91yCLAHu/GFD4Nrj7gAsvikdmJrRTC5W
+      ZdUBr8bfE4pPAajZqwC01gAQ5r0GwFdo5zkuxrZX/znrWlAAieu+F+6CwR05
+      w7yrnU+P9r7s33ScTnnwgV0nAOkBd52IQYJMGFdX68VPwTr/wUGyCjpHh5Om
+      ebqmrYJuIIE9KIb0glKJxECxh8axwl0ZCeRnZEolqmPQq2IAl9AJtDfQqP59
+      lVwlj+EhFTAJioqQorBgPIemk0MDWmQ1OsGxJtqbIRZQAlYJ/xudVvYyFiaE
+      IwlnpIQvZEAkkjDnVeDpzwBPG27hzXR3wLs7ZyU7LreGm/3p0ZuAt7KFtfJt
+      /2jYvraunT25IxNr+6DA7PJl4EH8VdgAdbEDHwe8tVmyXM4RmaMKX3AJbjgQ
+      4T9rSU3saegLiaFYpxQdByuVnPaHLaj2Jy3oirWX2eYYlul5mu6YJrx6q2xz
+      XKjzdAzowFjT3wtxVJ7dEO08G16KHd7OtOO0lw+PPrCis4wHxA0SdV89KHK0
+      WUDyZJ8Tc9CNJKoocnU8d3IVda6mOa4N52wN6uobk/Pqa1LlO4rgu7sCVlmV
+      YDNRVBUcorcp9fMG6h1vtXcG+33U3doddAYHZyf/QhXsuqIYc4qC+qXqK1GY
+      Mc5pAFiEA1IbIAmgBYCWz2BSbQ0MQelYyIJwqBYnaPBXjCYUisUk/Mc/skW7
+      HTwo1Oi6xy73brHvbN5kk7d1pisIrZXxKWZ+0adip/uljemOeu5fxkcvcg6C
+      r0L01UX4P45zz6bJEusWGaFUv5jX7+a12/sQEOvQXXZInBZybSP7jr/ALZl6
+      pa6zILTuS10s1mzbWdR93lr2ff/1XwAAAP//AwBMTXybGhkAAA==
+    http_version: '1.1'
