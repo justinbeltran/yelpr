@@ -19,7 +19,7 @@ class ColoredIO
       @io.send(:print, "#{ESC}33m#{o}#{NND}")
     when "F"
       @io.send(:print, "#{ESC}31m#{o}#{NND}")
-    else
+   :w! else
       @io.send(:print, o)
     end
   end
