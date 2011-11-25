@@ -28,5 +28,9 @@ module Yelpr
       response.body
     end
     
+    def business(id)
+      response = @conn.get "/v2/business/#{id}"
+      response.body
+    end
   end
 end

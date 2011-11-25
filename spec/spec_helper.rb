@@ -1,6 +1,5 @@
 gem 'minitest'
 require 'minitest/autorun'
-require 'mocha'
 require 'vcr'
 
 class ColoredIO

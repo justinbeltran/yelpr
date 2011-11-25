@@ -9,7 +9,7 @@ You must set up API OAuth access on the following page:
 
 [http://www.yelp.com/developers/getting_started/api_access](http://www.yelp.com/developers/getting_started/api_access)
 
-See the following for reference:
+See the following for reference, when using the client:
 
 [http://www.yelp.com/developers/documentation/v2/overview](http://www.yelp.com/developers/documentation/v2/overview)
 
