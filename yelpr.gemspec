@@ -8,8 +8,8 @@ Gem::Specification.new do |s|
   s.authors     = ["Justin Beltran"]
   s.email       = ["justinvbeltran@gmail.com"]
   s.homepage    = ""
-  s.summary     = %q{TODO: Write a gem summary}
-  s.description = %q{TODO: Write a gem description}
+  s.summary     = %q{Yelp API v2.0 Ruby gem}
+  s.description = %q{Yelp gem for the masses.}
 
   s.rubyforge_project = "yelpr"
 
@@ -19,6 +19,13 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
 
   # specify any dependencies here; for example:
-  # s.add_development_dependency "rspec"
-  # s.add_runtime_dependency "rest-client"
+  s.add_development_dependency "webmock"
+  s.add_development_dependency "rake"
+  s.add_development_dependency "minitest"
+  s.add_development_dependency "vcr"
+  s.add_runtime_dependency "faraday"
+  s.add_runtime_dependency "faraday_middleware"
+  s.add_runtime_dependency "hashie"
+  s.add_runtime_dependency "multi_json"
+  s.add_runtime_dependency "simple_oauth"
 end
