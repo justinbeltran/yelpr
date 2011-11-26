@@ -7,10 +7,10 @@ describe Yelpr::Client do
   before do
     VCR.insert_cassette(__name__, :record => :new_episodes)
     @client = Yelpr::Client.new(
-      :consumer_key    => 'i0dj2IWqCUY_A_0ZotwPtQ',
-      :consumer_secret => 'z6tUShId0oPctG5po6I_D16Ld8M',
-      :token           => 'dJN9A1_-TNJoXNcOuk3xgn4AVJze-nU5',
-      :token_secret    => '6Pr0C98rHNlfT23APD12TV-b5Eg'
+      :consumer_key    => 'consumer_key',
+      :consumer_secret => 'consumer_secret',
+      :token           => 'token',
+      :token_secret    => 'token_secret'
     )
   end
 
