@@ -20,12 +20,12 @@ gem install yelpr
 ```
 
 Usage
+------------
 
 After you provide your API credentials, you can make pass API params to
 the search method.  For example to search for the first 5 results for
 "food" in Los Angeles, you would do the following:
 
-------------
 ```ruby
 client = Yelpr::Client.new do |c|
 	c.consumer_key    = 'consumer_key'
@@ -34,6 +34,5 @@ client = Yelpr::Client.new do |c|
 	c.token_secret    = 'token_secret'
 end
 
-client.search( :term => 'food', :location => 'Los Angeles, CA', :limit
-=> 5)
+results = client.search(:term => 'food', :location => 'Los Angeles, CA', :limit => 5)
 ```
