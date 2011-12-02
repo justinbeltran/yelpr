@@ -13,8 +13,27 @@ See the following for reference, when using the client:
 
 [http://www.yelp.com/developers/documentation/v2/overview](http://www.yelp.com/developers/documentation/v2/overview)
 
-Setup && Installation
+Installation
 ------------
 ```bash
-TBD
+gem install yelpr
+```
+
+Usage
+
+After you provide your API credentials, you can make pass API params to
+the search method.  For example to search for the first 5 results for
+"food" in Los Angeles, you would do the following:
+
+------------
+```ruby
+client = Yelpr::Client.new do |c|
+	c.consumer_key    = 'consumer_key'
+	c.consumer_secret = 'consumer_secret'
+	c.token           = 'token'
+	c.token_secret    = 'token_secret'
+end
+
+client.search( :term => 'food', :location => 'Los Angeles, CA', :limit
+=> 5)
 ```
