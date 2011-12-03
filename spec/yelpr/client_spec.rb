@@ -6,12 +6,12 @@ describe Yelpr::Client do
 
   before do
     VCR.insert_cassette(__name__, :record => :new_episodes)
-    @client = Yelpr::Client.new(
-      :consumer_key    => 'consumer_key',
-      :consumer_secret => 'consumer_secret',
-      :token           => 'token',
-      :token_secret    => 'token_secret'
-    )
+    @client = Yelpr::Client.new do |c|
+      c.consumer_key    = 'consumer_key'
+      c.consumer_secret = 'consumer_secret'
+      c.token           = 'token'
+      c.token_secret    = 'token_secret'
+    end
   end
 
   after do
@@ -20,7 +20,7 @@ describe Yelpr::Client do
 
   describe "when created" do
     it 'gets an error response if OAuth credentials are missing' do
-      noauth_client = Yelpr::Client.new
+      noauth_client = Yelpr::Client.new { } 
       response = noauth_client.search
       response.error.text.must_match /One or more parameters are missing in request/
       response.error.id.must_match /MISSING_PARAMETER/
