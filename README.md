@@ -22,8 +22,8 @@ gem install yelpr
 Usage
 ------------
 
-After you provide your API credentials, you can make pass API params to
-the search method.  For example to search for the first 5 results for
+After you provide your API credentials, you can pass API params to
+the search method as an options hash.  For example to search for the first 5 results for
 "food" in Los Angeles, you would do the following:
 
 ```ruby
@@ -36,3 +36,5 @@ end
 
 results = client.search(:term => 'food', :location => 'Los Angeles, CA', :limit => 5)
 ```
+
+The results are in the form of a Hashie::Mash
