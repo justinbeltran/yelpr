@@ -35,6 +35,7 @@ describe Yelpr::Client do
         :location => 'Irvine, CA',
         :limit    => 5
       )
+      response.must_be_kind_of Hashie::Mash 
       response.businesses.size.must_equal 5
     end
   end
@@ -43,6 +44,7 @@ describe Yelpr::Client do
     it "gets specific business results by id" do
       response = @client.business('yelp-san-francisco')
 
+      response.must_be_kind_of Hashie::Mash 
       response.categories.wont_be_empty
       response.reviews.wont_be_empty
       response.location.wont_be_nil
