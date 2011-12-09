@@ -10,7 +10,7 @@ module Yelpr
 
     attr_accessor :consumer_key, :consumer_secret, :token, :token_secret
 
-    def initialize()
+    def initialize
       yield self
 
       @conn = Faraday.new(:url => ROOT_PATH) do |builder|
